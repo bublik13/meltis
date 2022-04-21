@@ -70,18 +70,7 @@
 
 
 /* ********** Filter ********** */
-// const $filter__dropdown = $('.filter__dropdown');
 
-// $.each($filter__dropdown, function() {
-//   const $dropdown = $(this),
-//         $title = $dropdown.find('.filter__title');
-
-//   $title.on('click', function(evt) {
-//     evt.preventDefault();
-
-//     $dropdown.toggleClass('open');
-//   })
-// })
 
 
 
