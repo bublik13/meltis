@@ -101,6 +101,11 @@
             </ul>
           </nav>
         </div>
+        <button type="button" aria-label="close" class="burger header__burger js-burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
         <div class="header__control">
           <div class="header__search">
             <div class="header__search_btn">
@@ -114,15 +119,87 @@
           <a class="header__item" href="blank.html">
             <div class="header__icon header__icon-favorites"></div>
           </a>
-          <a class="header__item" href="cart.html">
-            <div class="header__icon header__icon-cart"></div>
+          <a class="header__item js-header__icon-cart" href="#">
+            <div class="header__icon header__icon-cart "></div>
           </a>
+            <div class="cart__container js-cart">
+              <div class="cart__container-wrap">
+                <div class="cart__title">Товар в корзине</div>
+              <button type="button" aria-label="close" class="cart__close js-cart__close">
+                <span class="cart__line"></span>
+                <span class="cart__line"></span>
+              </button>
+              <div class="cart__wrap">
+                <div class="cart__wrap-left">
+                  <div class="cart__wrap-img">
+                    <img class="cart__icon"src="img/cart/close.svg" alt="close">
+                    <img class="cart__img"src="img/cart/crystal.jpg" alt="">
+                  </div>
+                  <div class="cart__wrap-text">
+                    <div class="cart__name">Alessa</div>
+                    <div class="cart__subname">Дизайнерский светильник</div>
+                    <div class="cart__subname">Размер: S</div>
+                  </div>
+                </div>
+                <div class="cart__wrap-number">
+                  <div class="cart__name">444 4444 ₽</div>
+                  <div class="cart__numbner">- 1 +</div>
+                </div>
+              </div>
+              <div class="cart__wrap-bottom">
+                <div class="cart__wrap-total">
+                  <div class="cart__total">Итого</div>
+                  <div class="cart__numbner-big">444 4444 ₽</div>
+                </div>
+                <div class="cart__amount">
+                  1 товар на сумму
+                </div>
+              </div>
+              <a href="#"class="cart__btn">Оформить заказ</a>
+              <div class="cart__sutext">После оформления заказа менеджер свяжется с вами, чтобы уточнить все детали</div>
+              <div class="cart__swiper bestsellers__swiper swiper mySwiper6">
+                <h3 class="bestsellers__title-small">С этим часто покупают</h3>
+                <div class="bestsellers__swiper-wrapper swiper-wrapper">
+                  <a class="bestsellers__swiper-slide swiper-slide" href="card.html">
+                    <div class="subswiper swiper mySwiper3">
+                      <!-- Additional required wrapper -->
+                      <div class="subswiper__swiper-wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="subswiper__swiper-slide swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
+                        <div class="subswiper__swiper-slide swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
+                        <div class="subswiper__swiper-slide swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="bestsellers__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="bestsellers__wrap">
+                      <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+                      <p class="bestsellers__price--new">88 000 ₽</p>
+                    </div>
+                  </a>
+                  <a class="bestsellers__swiper-slide swiper-slide" href="card.html">
+                    <div class="subswiper swiper mySwiper3">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="subswiper__swiper-slide swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal2.png" alt="crystal"></div>
+                        <div class="subswiper__swiper-slide swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal2.png" alt="crystal"></div>
+                        <div class="subswiper__swiper-slide swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal2.png" alt="crystal"></div>
+                      </div>
+                      <!-- If we need pagination -->
+                      <div class="bestsellers__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="bestsellers__wrap">
+                      <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+                      <p class="bestsellers__price--new">88 000 ₽</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="bestsellers-button-prev swiper-button-prev"></div>
+                <div class="bestsellers-button-next swiper-button-next"></div>
+              </div>
+            </div>
         </div>
-        <button type="button" aria-label="close" class="burger header__burger js-burger">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </button>
       </div>
       </div>
     </div>
@@ -415,6 +492,37 @@
   });
   close.addEventListener('click', ()=>{  
   submenu.classList.remove('submenu1--active');
+  });
+</script>
+<script>     
+
+  const headerIconCart = document.querySelector('.js-header__icon-cart');
+  const cart = document.querySelector('.js-cart');
+  const cartClose = document.querySelector('.js-cart__close');
+
+  headerIconCart.addEventListener('click', ()=>{  
+  cart.classList.add('cart__container--active');
+  cartClose.classList.add('cart__close--active');
+  });
+  cartClose.addEventListener('click', ()=>{  
+  cart.classList.remove('cart__container--active');
+  });
+</script>
+<script>
+  const swiper6 = new Swiper(".mySwiper6", {
+    spaceBetween: 17,
+    cssMode: true,
+    pagination: {
+      el: false,
+      // clickable: true,
+    },
+    navigation: {
+        nextEl: '.bestsellers-button-next',
+        prevEl: '.bestsellers-button-prev',
+      },
+      mousewheel: true,
+      keyboard: true,
+      slidesPerView: 2,
   });
 </script>
 
