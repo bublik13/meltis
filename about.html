@@ -113,10 +113,10 @@
             </form>
           </div>
           </div>
-          <a class="header__item" href="blank.html">
+          <a class="header__item" href="comparison.html">
             <div class="header__icon header__icon-comparison"></div>
           </a>
-          <a class="header__item" href="blank.html">
+          <a class="header__item" href="favorite.html">
             <div class="header__icon header__icon-favorites"></div>
           </a>
           <a class="header__item js-header__icon-cart" href="#">
@@ -390,156 +390,9 @@
       </ul>
     </div>
   </footer>
-  
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script type="module">  
-    const swiper = new Swiper('.banner', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      // If we need pagination
-      pagination: {
-        el: '.banner__pagination',
-      },
-      // Navigation arrows
-      navigation: {
-        nextEl: '.banner-button-next',
-        prevEl: '.banner-button-prev',
-      },
-    });
-  </script>
-    <!-- Initialize Swiper -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    const swiper2 = new Swiper(".mySwiper2", {
-      spaceBetween: 30,
-      cssMode: true,
-      pagination: {
-        el: false,
-        // clickable: true,
-      },
-      navigation: {
-          nextEl: '.bestsellers-button-next',
-          prevEl: '.bestsellers-button-prev',
-        },
-        mousewheel: true,
-        keyboard: true,
-        breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 8,
-          },
-          415: {
-            slidesPerView: 3,
-            spaceBetween: 8,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 5,
-          },
-          1200: { 
-            slidesPerView: 5,
-            spaceBetween: 30
-          }
-        }
-    });
-  </script>
-  <script>
-    const swiper3 = new Swiper('.mySwiper3', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      rewind: true,
-      nested:true,
-      // If we need pagination
-      pagination: {
-        el: '.bestsellers__pagination',
-      },
-    });
-  </script>
-  <script>
-    const swiper4 = new Swiper('.mySwiper4', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.new-button-next',
-        prevEl: '.new-button-prev',
-      },
-    });
-  </script>
-  <script>
-    const swiper5 = new Swiper('.mySwiper5', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: true,
-      // Navigation arrows
-      navigation: {
-        nextEl: '.new-button-next',
-        prevEl: '.new-button-prev',
-      },
-      pagination: {
-      el: '.new__pagination',
-    },
-    });
-  </script>
   <script src="js/bootstrap.min.js"></script>
-  <script>     
-    const body = document.querySelector('.js-body');
-    const nav = document.querySelector('.js-nav');
-    const burger = document.querySelector('.js-burger');
+  <script src="js/script.js"></script>
 
-    burger.addEventListener('click', ()=>{  
-    burger.classList.toggle('burger--active');
-    nav.classList.toggle('header__nav--active');
-    body.classList.toggle('body--lock');
-    });
-</script>
-<script>     
-
-  const link = document.querySelector('.js-link');
-  const submenu = document.querySelector('.js-submenu');
-  const close = document.querySelector('.js-close');
-
-  link.addEventListener('click', ()=>{  
-  submenu.classList.add('submenu1--active');
-  close.classList.add('burger--active');
-  });
-  close.addEventListener('click', ()=>{  
-  submenu.classList.remove('submenu1--active');
-  });
-</script>
-<script>     
-
-  const headerIconCart = document.querySelector('.js-header__icon-cart');
-  const cart = document.querySelector('.js-cart');
-  const cartClose = document.querySelector('.js-cart__close');
-
-  headerIconCart.addEventListener('click', ()=>{  
-  cart.classList.add('cart__container--active');
-  cartClose.classList.add('cart__close--active');
-  });
-  cartClose.addEventListener('click', ()=>{  
-  cart.classList.remove('cart__container--active');
-  });
-</script>
-<script>
-  const swiper6 = new Swiper(".mySwiper6", {
-    spaceBetween: 17,
-    cssMode: true,
-    pagination: {
-      el: false,
-      // clickable: true,
-    },
-    navigation: {
-        nextEl: '.bestsellers-button-next',
-        prevEl: '.bestsellers-button-prev',
-      },
-      mousewheel: true,
-      keyboard: true,
-      slidesPerView: 2,
-  });
-</script>
 </body>
 </html>
