@@ -112,6 +112,8 @@
     const headerIconCart = document.querySelector('.js-header__icon-cart');
     const cart = document.querySelector('.js-cart');
     const cartClose = document.querySelector('.js-cart__close');
+    const footerIconCart = document.querySelector('.js-footer_control__item');
+
 
     headerIconCart.addEventListener('click', ()=>{  
     cart.classList.add('cart__container--active');
@@ -120,6 +122,13 @@
     cartClose.addEventListener('click', ()=>{  
     cart.classList.remove('cart__container--active');
     });
+    footerIconCart.addEventListener('click', ()=>{  
+    cart.classList.add('cart__container--active');
+    cartClose.classList.add('cart__close--active');
+      });
+    cartClose.addEventListener('click', ()=>{  
+    cart.classList.remove('cart__container--active');
+      });
 
     const swiper6 = new Swiper(".mySwiper6", {
         spaceBetween: 17,
