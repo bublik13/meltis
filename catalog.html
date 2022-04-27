@@ -99,6 +99,63 @@
                 </div>
               </li>
             </ul>
+            <ul class="nav__mobile-list">
+              <li class="nav__item">
+                <a class="nav__link js-mobile-link" href="#">Каталог</a>
+                <div class="submenu1 js-mobile-submenu">
+                  <ul class="submenu1__list">
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Потолочные</a>
+                      <div class="submenu2 ">
+                        <ul class="submenu2__list">
+                          <li class="submenu2__item"><a class="submenu2__link" href="card.html">Люстры</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Светильники</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Кольцевые люстры и светильники</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Реечные и рядные светильники 
+                            и люстры</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Точечный свет</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Настенные</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Торшеры</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Инсталляции</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Детский свет</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Настольные лампы</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Конструктор освещения</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Световые системы</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Аксессуары</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Патроны</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Новинки</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Акции</a></li>
+                  </ul>
+                  <div class="submenu1__back js-back">Назад</div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Новинки</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Акции</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blank.html">Инсталляции</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Гарантии</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="delivery.html">Оплата и доставка</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="return.html">Обмен и возврат</a>
+              </li>
+            </ul>
           </nav>
         </div>
         <button type="button" aria-label="close" class="burger header__burger js-burger">
@@ -106,12 +163,17 @@
           <span class="burger__line"></span>
           <span class="burger__line"></span>
         </button>
-        <div class="header__control">
+        <div class="header__control js-search">
           <div class="header__search">
             <div class="header__search_btn">
-            <form class="search">
-            </form>
-          </div>
+              <form class="search js-search-img">
+                <input class="search__input js-input">
+              </form>
+            </div>
+            <button type="button" aria-label="close" class="search__close js-search-close">
+              <span class="search__line"></span>
+              <span class="search__line"></span>
+            </button>
           </div>
           <a class="header__item" href="comparison.html">
             <div class="header__icon header__icon-comparison"></div>
@@ -206,273 +268,404 @@
   </header>
   <main class="main bestsellers">
     <div class="bestsellers__container container bestsellers__container--bottom">
-        <div class="bestsellers__title">Люстры и дизайнерские светильники</div>
-        <ul class="blog__breadcrumb breadcrumb d-flex">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="catalog.html">каталог</a>
-          </li>
-        </ul>
-        <a class="bestsellers__title" href="#">Фильтры</a>
-        <div class="bestsellers__list">
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal1.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
+      <div class="bestsellers__title">Люстры и дизайнерские светильники</div>
+      <ul class="blog__breadcrumb breadcrumb d-flex">
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a class="breadcrumb__link" href="catalog.html">каталог</a>
+        </li>
+      </ul>
+      <a class="bestsellers__title title bestsellers__title--bg js-title" href="#">Фильтры</a>
+      <div class="bestsellers__filters filters js-filters">
+        <div class="filters__wrap">
+          <div class="filter__option filter__option--absolute">
+            <div class="filter__title">Цвет</div>
+            <div class="filter__list">
+              <input class="filter__radio" type="checkbox" id="type_kids2" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids2">Серебро</label>
+              <input class="filter__radio" type="checkbox" id="type_kids3" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids3">Бронза</label>
+              <input class="filter__radio" type="checkbox" id="type_kids4" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids4">Золото</label>
+              <input class="filter__radio" type="checkbox" id="type_kids5" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids5">Латунь</label>
+              <input class="filter__radio" type="checkbox" id="type_kids6" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids6">Сталь</label>
             </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+          <div class="filter__option">
+            <div class="filter__title">Стиль</div>
+            <div class="filter__list">
+              <input class="filter__radio" type="checkbox" id="type_kids7" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids7">Лофт</label>
+              <input class="filter__radio" type="checkbox" id="type_kids8" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids8">Модерн</label>
+              <input class="filter__radio" type="checkbox" id="type_kids9" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids9">Классический стиль</label>
+              <input class="filter__radio" type="checkbox" id="type_kids10" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids10">Скандинавский стиль</label>
+              <input class="filter__radio" type="checkbox" id="type_kids11" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids11">Ар-Деко</label>
+              <input class="filter__radio" type="checkbox" id="type_kids12" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids12">Ручная работа</label>
             </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal2.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal2.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal2.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal3.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal3.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal3.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal4.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal4.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal4.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal5.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal5.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal5.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal6.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal6.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal6.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal7.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal7.png" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal7.png" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal8.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal8.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal8.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal9.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal9.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal9.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal10.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal10.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal10.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal11.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal11.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal11.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal12.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal12.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal12.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
-          <a class="bestsellers__card-small" href="card.html">
-            <div class="bestsellers__subswiper subswiper swiper mySwiper3">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-                <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="bestsellers__pagination swiper-pagination"></div>
-            </div>
-            <div class="bestsellers__wrap">
-              <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
-              <p class="bestsellers__price--new">88 000 ₽</p>
-            </div>
-          </a>
+          </div>
         </div>
+        <div class="filters__wrap">
+          <div class="filter__option">
+            <div class="filter__title">Тип</div>
+            <div class="filter__list">
+              <input class="filter__radio" type="checkbox" id="type_kids13" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids13">Люстры</label>
+              <input class="filter__radio" type="checkbox" id="type_kids15" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids15">Люстра инсталляция</label>
+              <input class="filter__radio" type="checkbox" id="type_kids16" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids16">Потолочные светильники</label>
+              <input class="filter__radio" type="checkbox" id="type_kids17" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids17">Потолочные люстры</label>
+              <input class="filter__radio" type="checkbox" id="type_kids18" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids18">Люстры для низких потолков</label>
+              <input class="filter__radio" type="checkbox" id="type_kids19" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids19">Кольцевые люстры и светильники</label>
+              <input class="filter__radio" type="checkbox" id="type_kids20" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids20">Реечные и рядные светильники и люстры</label>
+              <input class="filter__radio" type="checkbox" id="type_kids21" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids21">Бра и настенные светильники</label>
+              <input class="filter__radio" type="checkbox" id="type_kids22" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids22">Готовые комбинации светильников</label>
+              <input class="filter__radio" type="checkbox" id="type_kids23" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids23">Настольные лампы</label>
+              <input class="filter__radio" type="checkbox" id="type_kids24" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids24">Точечный свет</label>
+              <input class="filter__radio" type="checkbox" id="type_kids25" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids25">Детский свет</label>
+              <input class="filter__radio" type="checkbox" id="type_kids26" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids26">Торшеры</label>
+              <input class="filter__radio" type="checkbox" id="type_kids27" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids27">Аксессуары</label>
+            </div>
+          </div>
+        </div>
+        <div class="filters__wrap">
+          <div class="filter__option">
+            <div class="filter__title">Материал</div>
+            <div class="filter__list">
+              <input class="filter__radio" type="checkbox" id="type_kids28" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids28">Хром</label>
+              <input class="filter__radio" type="checkbox" id="type_kids29" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids29">Дерево</label>
+              <input class="filter__radio" type="checkbox" id="type_kids30" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids30">Мрамор</label>
+              <input class="filter__radio" type="checkbox" id="type_kids31" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids31">Текстильный абажур</label>
+              <input class="filter__radio" type="checkbox" id="type_kids32" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids32">Металл</label>
+              <input class="filter__radio" type="checkbox" id="type_kids33" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids33">Акрил</label>
+              <input class="filter__radio" type="checkbox" id="type_kids34" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids34">Стекло</label>
+              <input class="filter__radio" type="checkbox" id="type_kids35" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids35">Камень</label>
+              <input class="filter__radio" type="checkbox" id="type_kids36" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids36">Цемент</label>
+            </div>
+          </div>
+          <div class="filter__option">
+            <div class="filter__title">Форма</div>
+            <div class="filter__list">
+              <input class="filter__radio" type="checkbox" id="type_kids37" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids37">Шарообразные плафоны</label>
+              <input class="filter__radio" type="checkbox" id="type_kids38" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids39">Купольная форма</label>
+              <input class="filter__radio" type="checkbox" id="type_kids40" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids40">Удлиненная форма</label>
+              <input class="filter__radio" type="checkbox" id="type_kids41" name="type" wfd-invisible="true">
+              <label class="filter__label" for="type_kids41">Молекулярная форма</label>
+            </div>
+          </div>
+        </div>
+        <div class="filters__wrap filters__wrap--absolute">
+          <div class="polzunok__title">Цена</div>
+          <div class="polzunok-container-5">
+            <div class="polzunok__wrap polzunok__wrap--top">
+              <div class="polzunok__text">от</div>
+              <input type="text" class="polzunok-input-5-left" />
+              <div class="polzunok__text">₽</div>
+            </div>
+            <div class="polzunok__wrap polzunok__wrap--top2">
+              <div class="polzunok__text">до</div>
+              <input type="text" class="polzunok-input-5-right "/>
+              <div class="polzunok__text">₽</div>
+            </div>
+            <div class="polzunok-5"></div>
+          </div>
+        </div>
+        <button class="filters__button-apply">Применить</button>
+        <button class="filters__button-reset">Сбросить</button>
+        <button type="button" aria-label="close" class="filters__close js-filters-close">
+          <span class="filters__line"></span>
+          <span class="filters__line"></span>
+        </button>
+      </div>
+      <div class="bestsellers__list">
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal1.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal1.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal2.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal2.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal2.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal3.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal3.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal3.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal4.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal4.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal4.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal5.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal5.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal5.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal6.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal6.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal6.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal7.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal7.png" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal7.png" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal8.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal8.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal8.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal9.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal9.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal9.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal10.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal10.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal10.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal11.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal11.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal11.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal12.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal12.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal12.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+        <a class="bestsellers__card-small" href="card.html">
+          <div class="bestsellers__subswiper subswiper swiper mySwiper3">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img"src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+              <div class="swiper-slide"><img class="subswiper__img" src="img/bestsellers/crystal13.jpg" alt="crystal"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="bestsellers__pagination swiper-pagination"></div>
+          </div>
+          <div class="bestsellers__wrap">
+            <h3 class="bestsellers__name">Semi sandblasted Crysta</h3>
+            <p class="bestsellers__price--new">88 000 ₽</p>
+          </div>
+        </a>
+      </div>
     </div>
   </main>
 
@@ -587,6 +780,10 @@
   </footer>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://atuin.ru/demo/ui-slider/jquery-ui.min.js"></script>
+  <script src="https://atuin.ru/demo/ui-slider/jquery-ui.css"></script>
+  <script src="https://atuin.ru/demo/ui-slider/jquery.ui.touch-punch.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

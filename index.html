@@ -27,7 +27,7 @@
       pointer-events: none;
     }
   </style>
-  <header class="header">
+   <header class="header">
     <div class="header__container container">
       <div class="header__top">
         <a class="header__logo" href="index.html">
@@ -37,13 +37,13 @@
           <nav class="header__nav nav js-nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link js-link" href="catalog.html">Каталог</a>
+                <a class="nav__link js-link" href="#">Каталог</a>
                 <div class="submenu1 js-submenu">
                   <ul class="submenu1__list">
                     <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Потолочные</a>
                       <div class="submenu2 ">
                         <ul class="submenu2__list">
-                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Люстры</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="card.html">Люстры</a></li>
                           <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Светильники</a></li>
                           <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Кольцевые люстры и светильники</a></li>
                           <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Реечные и рядные светильники 
@@ -99,6 +99,63 @@
                 </div>
               </li>
             </ul>
+            <ul class="nav__mobile-list">
+              <li class="nav__item">
+                <a class="nav__link js-mobile-link" href="#">Каталог</a>
+                <div class="submenu1 js-mobile-submenu">
+                  <ul class="submenu1__list">
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Потолочные</a>
+                      <div class="submenu2 ">
+                        <ul class="submenu2__list">
+                          <li class="submenu2__item"><a class="submenu2__link" href="card.html">Люстры</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Светильники</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Кольцевые люстры и светильники</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Реечные и рядные светильники 
+                            и люстры</a></li>
+                          <li class="submenu2__item"><a class="submenu2__link" href="blank.html">Точечный свет</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Настенные</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Торшеры</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Инсталляции</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Детский свет</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Настольные лампы</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Конструктор освещения</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Световые системы</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Аксессуары</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Патроны</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Новинки</a></li>
+                    <li class="submenu1__item"><a class="submenu1__link" href="blank.html">Акции</a></li>
+                  </ul>
+                  <div class="submenu1__back js-back">Назад</div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Новинки</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Акции</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blank.html">Инсталляции</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Гарантии</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="delivery.html">Оплата и доставка</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="return.html">Обмен и возврат</a>
+              </li>
+            </ul>
           </nav>
         </div>
         <button type="button" aria-label="close" class="burger header__burger js-burger">
@@ -106,12 +163,17 @@
           <span class="burger__line"></span>
           <span class="burger__line"></span>
         </button>
-        <div class="header__control">
+        <div class="header__control js-search">
           <div class="header__search">
             <div class="header__search_btn">
-            <form class="search">
-            </form>
-          </div>
+              <form class="search js-search-img">
+                <input class="search__input js-input">
+              </form>
+            </div>
+            <button type="button" aria-label="close" class="search__close js-search-close">
+              <span class="search__line"></span>
+              <span class="search__line"></span>
+            </button>
           </div>
           <a class="header__item" href="comparison.html">
             <div class="header__icon header__icon-comparison"></div>
@@ -199,7 +261,6 @@
                 <div class="bestsellers-button-next swiper-button-next"></div>
               </div>
             </div>
-          </div>
         </div>
       </div>
       </div>

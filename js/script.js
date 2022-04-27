@@ -108,12 +108,40 @@
     submenu.classList.remove('submenu1--active');
     });
 
+    const mobileLink = document.querySelector('.js-mobile-link');
+    const mobileSubmenu = document.querySelector('.js-mobile-submenu');
+    const back = document.querySelector('.js-back');
+
+    mobileLink.addEventListener('click', ()=>{  
+    mobileSubmenu.classList.add('submenu1--active');
+    back.classList.add('burger--active');
+    });
+    back.addEventListener('click', ()=>{  
+    mobileSubmenu.classList.remove('submenu1--active');
+    });
+
+
+    const search = document.querySelector('.js-search');
+    const searchImg = document.querySelector('.js-search-img');
+    const input = document.querySelector('.js-input');
+    const searchClose = document.querySelector('.js-search-close');
+
+    search.addEventListener('click', ()=>{  
+    searchImg.classList.add('search--active');
+    input.classList.add('search__input--active');
+    searchClose.classList.add('search__close--active');
+    });
+    searchClose.addEventListener('click', ()=>{
+      input.classList.add('search__input-none--active');
+      searchImg.classList.add('search-relative--active');
+      searchClose.classList.add('search__close-none--active');
+
+    });
 
     const headerIconCart = document.querySelector('.js-header__icon-cart');
     const cart = document.querySelector('.js-cart');
     const cartClose = document.querySelector('.js-cart__close');
     const footerIconCart = document.querySelector('.js-footer_control__item');
-
 
     headerIconCart.addEventListener('click', ()=>{  
     cart.classList.add('cart__container--active');
@@ -125,10 +153,27 @@
     footerIconCart.addEventListener('click', ()=>{  
     cart.classList.add('cart__container--active');
     cartClose.classList.add('cart__close--active');
-      });
+    });
     cartClose.addEventListener('click', ()=>{  
     cart.classList.remove('cart__container--active');
-      });
+    });
+
+
+    const title = document.querySelector('.js-title');
+    const filters = document.querySelector('.js-filters');
+    const filtersClose = document.querySelector('.js-filters-close');
+    title.addEventListener('click', ()=>{  
+    filters.classList.add('filters--active');
+    filtersClose.classList.add('filters-close--active');
+    });
+    filtersClose.addEventListener('click', ()=>{  
+    filters.classList.remove('filters--active');
+    });
+
+   
+
+    
+
 
     const swiper6 = new Swiper(".mySwiper6", {
         spaceBetween: 17,
@@ -175,3 +220,51 @@
         } 
         });
     }
+
+    $(".polzunok-5").slider({
+        min: 0,
+        max: 99999,
+        values: [2000, 3000],
+        range: true,
+        animate: "fast",
+        slide : function(event, ui) {    
+            $(".polzunok-input-5-left").val(ui.values[ 0 ]);   
+            $(".polzunok-input-5-right").val(ui.values[ 1 ]);  
+        }    
+    });
+    $(".polzunok-input-5-left").val($(".polzunok-5").slider("values", 0));
+    $(".polzunok-input-5-right").val($(".polzunok-5").slider("values", 1));
+    $(".polzunok-container-5 input").change(function() {
+        var input_left = $(".polzunok-input-5-left").val().replace(/[^0-9]/g, ''),    
+        opt_left = $(".polzunok-5").slider("option", "min"),
+        where_right = $(".polzunok-5").slider("values", 1),
+        input_right = $(".polzunok-input-5-right").val().replace(/[^0-9]/g, ''),    
+        opt_right = $(".polzunok-5").slider("option", "max"),
+        where_left = $(".polzunok-5").slider("values", 0); 
+        if (input_left > where_right) { 
+            input_left = where_right; 
+        }
+        if (input_left < opt_left) {
+            input_left = opt_left; 
+        }
+        if (input_left == "") {
+        input_left = 0;    
+        }        
+        if (input_right < where_left) { 
+            input_right = where_left; 
+        }
+        if (input_right > opt_right) {
+            input_right = opt_right; 
+        }
+        if (input_right == "") {
+        input_right = 0;    
+        }    
+        $(".polzunok-input-5-left").val(input_left); 
+        $(".polzunok-input-5-right").val(input_right); 
+        if (input_left != where_left) {
+            $(".polzunok-5").slider("values", 0, input_left);
+        }
+        if (input_right != where_right) {
+            $(".polzunok-5").slider("values", 1, input_right);
+        }
+    });
